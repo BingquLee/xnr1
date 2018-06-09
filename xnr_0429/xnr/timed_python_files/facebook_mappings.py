@@ -139,6 +139,7 @@ def facebook_count_mappings(index_name):
         },
         'mappings':{
             facebook_count_index_type:{
+				'properties':{
                 'uid':{
                     'type':'string',
                     'index':'not_analyzed'
@@ -159,7 +160,7 @@ def facebook_count_mappings(index_name):
                 'update_time':{
                     'type':'long'
                 }
-            }
+            }}
         }
     }
 

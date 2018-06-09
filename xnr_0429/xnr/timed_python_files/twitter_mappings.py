@@ -139,6 +139,7 @@ def twitter_count_mappings(index_name):
         },
         'mappings':{
             twitter_count_index_type:{
+				'properties':{
                 'tid':{ 
                     'type':'string',
                     'index':'not_analyzed'
@@ -155,7 +156,7 @@ def twitter_count_mappings(index_name):
                 'update_time':{
                     'type':'long'
                 }
-            }
+            }}
         }
     }
 
